@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Weather Dashboard</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+                <form>
+                    <h2>Enter City</h2>
+                    <input type="text" id="cityName"/>
+                    <input type="submit" id="searchBtn" onclick="onClick(this)"/>
+                </form>
+                <hr />
+                <div class="btn-group-vertical" style="width:100%">
+                    <button type="buttton" onclick="onClick2(this)" value ="f">ab</button>
+                    <button type="buttton" onclick="onClick2(this)" value ="f">aa</button>
+                    <button type="buttton" onclick="onClick2(this)" value ="f">aa</button>
+                    <button type="buttton" onclick="onClick2(this)" value ="f">aa</button>
+                    <button type="buttton" onclick="onClick2(this)" value ="f">aa</button>
+                    <button type="buttton" onclick="onClick2(this)" value ="f">aa</button>
+                    <button type="buttton" onclick="onClick2(this)" value ="f">aa</button>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="border border-dark card">
+                    <h3 id="today"></h3>
+                    <div id="mainIcon"></div>
+                    <p>Temperature: <span id=temp1></span> ℉</p>
+                    <p>Wind Speed: <span id=wind1></span> mph</p>
+                    <p>Humidity: <span id=hum1></span>%</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
+    <script src="Assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
