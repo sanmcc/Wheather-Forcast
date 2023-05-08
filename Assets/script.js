@@ -12,8 +12,6 @@ function onClick($this) {
         console.log("no input");
      } else {
          currentTemp(city);
-         //forecast
-        //  console.log(city)
          localStorage.setItem("key", city);
    }};
 
@@ -23,8 +21,6 @@ function onClick($this) {
         console.log("no input");
      } else {
          currentTemp(city);
-         //forecast
-        //  console.log(city)
          localStorage.setItem("key", city);
    }};
 
@@ -41,14 +37,7 @@ function currentTemp(city) {
        temp1.textContent = data.main.temp;
        wind1.textContent = data.wind.speed;
        hum1.textContent = data.main.humidity;
-       today.textContent = city
-
-       var iconCode = data.weather[0].icon;
-       var image = document.createElement("img");
-        image.setAttribute("src", "https://openweathermap.org/img/wn/" + iconCode + ".png");
-      mainIcon.appendChild(image);
-    
+       today.textContent = city    
    })
 }
-   currentTemp(localStorage.getItem("key"))
-   
+   currentTemp(localStorage.getItem("key"));

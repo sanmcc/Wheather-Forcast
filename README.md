@@ -13,4 +13,6 @@ SO THAT I can plan a trip accordingly
 
 ## Screenshot 
 
+![Alt text](./Assets/screenshot.JPG "Screenshot")
+
 ## Deployed Application 
