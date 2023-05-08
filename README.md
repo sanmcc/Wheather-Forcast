@@ -16,3 +16,5 @@ SO THAT I can plan a trip accordingly
 ![Alt text](./Assets/screenshot.JPG "Screenshot")
 
 ## Deployed Application 
+
+https://sanmcc.github.io/Wheather-Forcast/ 
