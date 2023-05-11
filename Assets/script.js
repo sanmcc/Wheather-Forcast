@@ -13,17 +13,17 @@ function onClick($this) {
      } else {
          currentTemp(city);
          localStorage.setItem("key", city);
+         $this.nextElementSibling.value = city;
    }};
 
-   function onClick2($this) {
-    var city = $this.value
-    if (city == ''){
-        console.log("no input");
-     } else {
-         currentTemp(city);
-         localStorage.setItem("key", city);
-   }};
-
+   document.querySelector('.btn').addEventListener('click', function() {
+    var city = localStorage.getItem('key');
+    if (city) {
+      currentTemp(city);
+      document.querySelector('#cityName').value = city;
+    }
+  });
+  
 function currentTemp(city) {
     for (var i= document.images.length; i-->0;)
         document.images[i].parentNode.removeChild(document.images[i]);

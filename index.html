@@ -5,7 +5,7 @@
     <title>Weather Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href='Assets/style.css'>
 </head>
 <body>
     <div class="container-fluid">
@@ -13,13 +13,14 @@
             <h1>Weather Dashboard</h1>
         </div>
         <div class="row">
+            <div class="col-sm-6 offset-sm-3">
                 <form>
                     <h2>Enter City</h2>
                     <input type="text" id="cityName"/>
                     <input type="submit" id="searchBtn" onclick="onClick(this)"/>
                 </form>
                 <hr />
-                    <button type="buttton" onclick="onClick2(this)" value ="f">previous search</button>
+                    <button type="button" class="btn"  value ="">previous search</button>
                 </div>
             </div>
                 <h3 id="today"></h3>
