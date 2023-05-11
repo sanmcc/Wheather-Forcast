@@ -27,7 +27,7 @@ function onClick($this) {
 function currentTemp(city) {
     for (var i= document.images.length; i-->0;)
         document.images[i].parentNode.removeChild(document.images[i]);
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key;
     fetch(queryURL + "&units=imperial")
     .then(function(response) {
        return response.json();
